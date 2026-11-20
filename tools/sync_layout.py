@@ -20,7 +20,7 @@ SITE_NAV = [("/", "Overview"), ("/about/", "About")]
 RECIPES = [
     ("/recipes/crispy-cranberry-chicken/", "Crispy cranberry chicken"),
     ("/recipes/balsamic-figs-blue-cheese/", "Balsamic figs with blue cheese"),
-    (None, "Asian fried eggs (coming soon)"),
+    ("/recipes/asian-fried-eggs/", "Asian fried eggs"),
 ]
 SERIES = {
     "Bangers on a Budget": [
