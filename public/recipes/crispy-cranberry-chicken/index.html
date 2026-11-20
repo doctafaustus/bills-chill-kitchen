@@ -87,6 +87,7 @@
     <nav class="header-tabs" aria-label="Sections">
       <a href="/">Overview</a>
       <a class="active" href="/recipes/crispy-cranberry-chicken/">Recipes</a>
+      <a href="/about/">About</a>
     </nav>
     <div class="header-right"><a href="https://www.youtube.com/@BillsChillKitchen" rel="noopener">YouTube</a></div>
   </header>
@@ -96,6 +97,7 @@
       <h2>Get started</h2>
       <ul>
         <li><a href="/">Overview</a></li>
+        <li><a href="/about/">About</a></li>
       </ul>
       <h2>Bangers on a Budget</h2>
       <ul>
@@ -105,7 +107,7 @@
     </nav>
 
     <main class="content">
-      <ol class="breadcrumbs">
+      <ol class="breadcrumbs no-print">
         <li><a href="/">Home</a></li>
         <li><a href="/">Bangers on a Budget</a></li>
         <li>Crispy cranberry chicken</li>
@@ -114,7 +116,12 @@
       <h1>Crispy cranberry chicken with white bean purée</h1>
       <p class="lede">A dinner-party plate for four, about $9.96 total. A little fancy for two cans of beans and some chicken quarters.</p>
 
-      <figure class="hero">
+      <div class="recipe-actions no-print">
+        <a class="btn btn-primary" href="#ingredients">↓ Jump to recipe</a>
+        <button class="btn" type="button" data-print-recipe>Print recipe</button>
+      </div>
+
+      <figure class="hero no-print">
         <img src="/img/crispy-cranberry-chicken-plated.jpg" alt="Crispy chicken thigh and cranberry-glazed drumstick on white bean purée, with three more plates behind it" width="1600" height="1200" fetchpriority="high">
         <figcaption>Dinner for four: one thigh and one drumstick per plate.</figcaption>
       </figure>
@@ -133,14 +140,15 @@
         <p><span class="label">Note:</span>The cost includes the portions of pantry ingredients used. Prices reflect my H-E-B shopping trip and may vary.</p>
       </div>
 
-      <h2 id="video">Watch the video <a class="anchor" href="#video" aria-label="Link to this section">#</a></h2>
-      <div class="video">
+      <h2 id="video" class="no-print">Watch the video <a class="anchor" href="#video" aria-label="Link to this section">#</a></h2>
+      <div class="video no-print">
         <iframe src="https://www.youtube-nocookie.com/embed/cPJaink77qA" title="$2.49 a Plate: Crispy Cranberry Chicken (Easy &amp; Cheap)" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
-      <p class="caption">From the <em>Bangers on a Budget</em> series on YouTube.</p>
+      <p class="caption no-print">From the <em>Bangers on a Budget</em> series on YouTube.</p>
 
       <h2 id="ingredients">Ingredients <a class="anchor" href="#ingredients" aria-label="Link to this section">#</a></h2>
-      <ul class="ingredients">
+      <p class="hint no-print">Tap an ingredient to check it off.</p>
+      <ul class="ingredients" data-checklist>
         <li>4 chicken leg quarters, separated into thighs and drumsticks</li>
         <li>2 cans Great Northern beans, drained and rinsed</li>
         <li>½ cup plus 3 tbsp whole-berry cranberry sauce</li>
@@ -194,10 +202,12 @@
         <p><span class="label">Tip:</span>Keep the pan sauce off the skin. That's what keeps the thighs crispy all the way to the table.</p>
       </div>
 
-      <h2 id="more">More Bangers on a Budget <a class="anchor" href="#more" aria-label="Link to this section">#</a></h2>
-      <p>Subscribe on <a href="https://www.youtube.com/@BillsChillKitchen" rel="noopener">YouTube</a> for more impressive meals from inexpensive ingredients, and let me know what I should make next.</p>
+      <p class="print-only print-source">Recipe from Bill's Chill Kitchen: billschillkitchen.com/recipes/crispy-cranberry-chicken/</p>
 
-      <p class="meta">Last updated November 20, 2026.</p>
+      <h2 id="more" class="no-print">More Bangers on a Budget <a class="anchor" href="#more" aria-label="Link to this section">#</a></h2>
+      <p class="no-print">Subscribe on <a href="https://www.youtube.com/@BillsChillKitchen" rel="noopener">YouTube</a> for more impressive meals from inexpensive ingredients, and let me know what I should make next.</p>
+
+      <p class="meta no-print">Last updated November 20, 2026.</p>
     </main>
 
     <aside class="toc" aria-label="On this page">
@@ -212,9 +222,10 @@
   </div>
 
   <footer class="site-footer">
-    © 2026 Bill's Chill Kitchen · <a href="https://www.youtube.com/@BillsChillKitchen" rel="noopener">YouTube</a>
+    © 2026 Bill's Chill Kitchen · <a href="/about/">About</a> · <a href="https://www.youtube.com/@BillsChillKitchen" rel="noopener">YouTube</a>
   </footer>
 
   <script src="/toc.js" defer></script>
+  <script src="/recipe.js" defer></script>
 </body>
 </html>
