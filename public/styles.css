@@ -264,6 +264,20 @@ ol.steps.start-9 { counter-reset: step 8; }
 }
 .hero figcaption { margin-top: 8px; font-size: 14px; color: var(--text-muted); }
 
+/* Photo placeholder (until a real photo is added) */
+.photo-placeholder {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background: #e8eaed;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text-muted);
+  font-size: 15px;
+}
+.card .card-placeholder { aspect-ratio: 16 / 9; border: 0; border-radius: 0; }
+
 /* Video */
 .video {
   position: relative;
