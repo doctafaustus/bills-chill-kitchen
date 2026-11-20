@@ -16,9 +16,11 @@ YOUTUBE = "https://www.youtube.com/@BillsChillKitchen"
 
 # (url, label)
 SITE_NAV = [("/", "Overview"), ("/about/", "About")]
+# Newest first. Use None as the url for a recipe that's coming soon (shown, not linked).
 RECIPES = [
-    ("/recipes/balsamic-figs-blue-cheese/", "Balsamic figs with blue cheese"),
     ("/recipes/crispy-cranberry-chicken/", "Crispy cranberry chicken"),
+    ("/recipes/balsamic-figs-blue-cheese/", "Balsamic figs with blue cheese"),
+    (None, "Asian fried eggs (coming soon)"),
 ]
 SERIES = {
     "Bangers on a Budget": [
@@ -65,7 +67,10 @@ def header(current):
 
 def side_nav(current):
     def section(title, items):
-        lis = "\n".join(f"        <li>{link(u, l, current)}</li>" for u, l in items)
+        lis = "\n".join(
+            f"        <li>{link(u, l, current)}</li>" if u else f'        <li><span class="soon">{l}</span></li>'
+            for u, l in items
+        )
         return f"      <h2>{title}</h2>\n      <ul>\n{lis}\n      </ul>\n"
 
     out = "\n" + section("Get started", SITE_NAV) + section("Recipes", RECIPES)

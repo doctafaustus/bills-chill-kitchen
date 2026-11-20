@@ -424,3 +424,7 @@ ul.ingredients li.check-item input:checked + label { color: var(--text-muted); t
   .print-source { margin-top: 18pt; font-size: 10pt; color: #555; }
   a { color: #000; }
 }
+
+/* Recipe card that isn't published yet */
+.card-soon { cursor: default; }
+.card-soon:hover { box-shadow: none; }
