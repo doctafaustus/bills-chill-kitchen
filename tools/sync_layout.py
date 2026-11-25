@@ -18,6 +18,7 @@ YOUTUBE = "https://www.youtube.com/@BillsChillKitchen"
 SITE_NAV = [("/", "Overview"), ("/about/", "About")]
 # Newest first. Use None as the url for a recipe that's coming soon (shown, not linked).
 RECIPES = [
+    ("/recipes/cracker-crusted-chicken-tenders/", "Cracker-crusted chicken tenders"),
     ("/recipes/crispy-cranberry-chicken/", "Crispy cranberry chicken"),
     ("/recipes/balsamic-figs-blue-cheese/", "Balsamic figs with blue cheese"),
     ("/recipes/asian-fried-eggs/", "Asian fried eggs"),
