@@ -26,9 +26,9 @@ list, and optional licensable footage.
 
 | Tier     | Cooks | Price   |
 | -------- | ----- | ------- |
-| Pilot    | 6     | $5,000  |
-| Standard | 12    | $9,500  |
-| Full     | 20    | $13,500 |
+| Pilot    | 6     | $7,000  |
+| Standard | 12    | $12,500 |
+| Full     | 20    | $19,500 |
 
 Priced at a modest discount to traditional in-home use tests ($15K to $75K+ per
 study, per Peekage and Simporter estimates). Creator pay target: $50 to $100 per

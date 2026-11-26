@@ -121,6 +121,22 @@ details p { margin: 8px 0 0; color: var(--text-muted); }
   text-align: center;
 }
 
+/* Accent hover states follow the chosen accent */
+.rkl-header .header-right a:hover,
+.btn-primary:hover { background: var(--link-hover, #1765cc); border-color: var(--link-hover, #1765cc); }
+
+/* Temporary dev tools (devtools.js) */
+.rkl-dev { position: fixed; right: 16px; bottom: 16px; z-index: 50; display: flex; flex-direction: column; align-items: flex-end; gap: 8px; font-size: 14px; }
+.rkl-dev-tab { order: 2; font: 500 13px/1 var(--font); padding: 8px 12px; border: 1px solid var(--border); border-radius: 16px; background: var(--bg); color: var(--text); cursor: pointer; box-shadow: 0 1px 3px rgba(60,64,67,.3); }
+.rkl-dev-panel { order: 1; width: 240px; padding: 12px; background: var(--bg); border: 1px solid var(--border); border-radius: 8px; box-shadow: 0 1px 3px rgba(60,64,67,.3), 0 4px 8px 3px rgba(60,64,67,.15); }
+.rkl-dev-panel[hidden] { display: none; }
+.rkl-dev-title { font-size: 12px; font-weight: 500; letter-spacing: .8px; text-transform: uppercase; color: var(--text-muted); margin: 0 0 8px; }
+.rkl-dev-panel button { display: flex; align-items: center; gap: 10px; width: 100%; padding: 8px; border: 1px solid transparent; border-radius: 6px; background: none; font: 400 14px var(--font); color: var(--text); cursor: pointer; text-align: left; }
+.rkl-dev-panel button:hover { background: var(--bg-subtle); }
+.rkl-dev-panel button[aria-pressed="true"] { border-color: var(--border); background: var(--bg-subtle); font-weight: 500; }
+.rkl-dev-panel button span { width: 18px; height: 18px; border-radius: 50%; flex: none; }
+.rkl-dev-panel button code { margin-left: auto; font-size: 11px; }
+
 @media (max-width: 840px) {
   .rkl-header { padding: 0 16px; gap: 16px; }
   .page { padding: 0 16px; }
